@@ -2,15 +2,16 @@
   width: 100%;
   height: 820px;
   position: relative;
-  // background-color: #282828;
+  background-color: #282828;
 }
 
 .main__inner {
   margin: 0 auto;
-  // max-width: 1440px;
+  max-width: 1440px;
   width: 100%;
   height: 820px;
   position: relative;
+  z-index: 0;
 }
 
 .main__inner:after {
