@@ -8,7 +8,7 @@
 }
 
 .footer__inner {
-  padding: 0 24px;
+  padding: 0 100px;
 }
 
 .footer__inner {
@@ -27,7 +27,7 @@
     line-height: 20px;
     letter-spacing: 0.2px;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
   span {
     padding-left: 5px;
@@ -36,7 +36,7 @@
     line-height: 20px;
     letter-spacing: 0.2px;
 
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
 }
 
@@ -56,12 +56,12 @@
     letter-spacing: 0.2px;
     text-decoration-line: underline;
 
-    color: #BB6BD9;
+    color: #bb6bd9;
   }
 }
 
 .footer__link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   height: 100px;
@@ -69,7 +69,6 @@
   right: 0px;
   background: url(../img/footer-decorsvg.svg) no-repeat;
 }
-
 
 .footer__right {
   display: flex;
@@ -86,5 +85,5 @@
 }
 
 .social:hover {
-  color: #BB6BD9;
+  color: #bb6bd9;
 }

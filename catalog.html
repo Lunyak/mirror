@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/slyle.css"> <!-- Resource style -->
+	<!-- <script src="js/modernizr.js"></script> -->
+
+	<title>ALMA</title>
+</head>
+<body>
+
+
+<div class="page" id="catalog">
+	<header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="logo__wrap">
+          <img src="img/logo.svg" alt="logo">
+          <h2>студия зеркал</h2>
+        </a>
+        <nav class="nav">
+          <ul class="nav__linklist">
+            <li><a href="#" class="nav__links">конструктор</a></li>
+            <li><a href="#" class="nav__links">каталог</a></li>
+            <li><a href="#" class="nav__links">наши работы</a></li>
+            <li><a href="#" class="nav__links">контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__contant">
+          <div class="header__phone">
+            <a href="+7 (000) 000 00 00">+7 (000)<span> 000 00 00</span></a>
+          </div>
+          <div class="header__buy-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#busket"></use> <!-- img gurger -->
+            </svg>
+          </div>
+        </div>
+			</div>
+		</div>
+  </header>
+
+
+
+
+
+
+
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog__inner">
+				<div class="catalog__content">
+					<!-- ТИТУЛЬНИК -->
+					<div class="catalog__content-title">
+						<p>Готовые зеркала на любой вкус</p>
+						<h2>Каталог зеркал</h2>
+					</div>
+					<!-- ФИЛЬТРЫ -->
+					<div class="catalog__form">
+						<form action="#" class="catalog__form-inner">
+							<div class="catalog__form-item-wrap">
+
+							<!-- ПОКАЗАТЬ ПО НОМЕРУ -->
+							<div class="catalog__number-item">
+								<label for="number-item">Показывать по</label>
+								<input class="btn-simple btn-catalog-number" id="number-item" type="number" placeholder="0">
+							</div>
+
+							<!-- ПОКАЗАТЬ ПО ПОПУЛЯРНОСТИ -->
+							<div class="catalog__option-item">
+								<label for="form-item">Сортировать по</label>
+								<select class="btn-simple btn-catalog-option" id="form-item" type="" placeholder="Сортировать по">
+									<option value="Популярности">Популярности</option>
+									<option value="Цене">Цене</option>
+								</select>
+							</div>
+							</div>	<!-----catalog__form-item-wrap----- -->
+							<div class="catalog__form-filter">
+								<label for="catalog-filter">Настроить фильтры</label>
+								<button class="catalog__form-filter-btn" id="catalog-filter"></button>
+							</div>
+						</form>
+					</div>
+					<!-- КАРТОЧКИ -->
+					<div class="catalog__card-wrap">
+
+						<!-- КАРТОЧКА -->
+						<div class="catalog__card">
+							<div class="catalog__card-img-wrap">
+								<div class="catalog__img-fon">
+									<img src="img/catalog/mirror-circle.jpg" alt="">
+								</div>
+								<!-- <div class="catalog__img-mirror">
+									<img src="" alt="">
+								</div> -->
+							</div>
+							<div class="catalog__card-discription">
+								<h2 class="catalog__card-price">1200.00</h2>
+								<p class="catalog__card-name">Название зеркала Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque optio quae?</p>
+							</div>
+						</div> <!-- КАРТОЧКА -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__text">
+					<p>© 2020 ALMA. Студия креативных зеркал.</p>
+					<span>Все права защищены</span>
+				</div>
+				<div class="footer__right">
+					<div class="footer__link">
+						<a href="#">Договор оферта</a>
+						<a href="#">Сроки изготовления</a>
+					</div>
+					<div class="social">
+						<a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+						<a href="#"><img src="img/vk.svg" alt="vkontakte"></a>
+						<a href="#"><img src="img/facebooke.svg" alt="facebooke"></a>
+						<a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- cd-section -->
+
+</div>
+
+
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/contacts.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

@@ -39,12 +39,12 @@
     color: #886BD9;
   }
   p {
+    margin-bottom: 24px;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
     letter-spacing: 0.2px;
-
     color: #FFFFFF;
   }
 }
@@ -116,9 +116,25 @@ position: absolute;
   font-weight: 800;
   font-size: 14px;
   line-height: 16px;
-  /* identical to box height, or 114% */
   letter-spacing: 1px;
   text-transform: uppercase;
-
+  transition: .3s;
+  position: relative;
+  z-index: 0;
   color: #FFFFFF;
+}
+
+
+
+#form .btn-form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 292px;
+  height: 40px;
+  // background: linear-gradient(91.36deg, #886BD9 -1.63%, #BB6BD9 124.28%);
+  // background: linear-gradient(91.91deg, #7450DC -1.61%, #B54DDC 123.13%);
+  background-color: red;
+  z-index: 20;
 }
