@@ -10,6 +10,12 @@
   height: 60px;
   text-align: center;
   cursor: auto;
+  @media (max-width: 1440px) {
+    bottom: 100px;
+  }
+  @media (max-width: 900px) {
+    bottom: 35px;
+  }
 }
 
 .cd-scroll-down-text {
@@ -30,6 +36,7 @@
   text-indent: initial !important;
   z-index: 20;
   cursor: pointer;
+ 
 }
 
 .cd-scroll-down::after {
@@ -59,11 +66,19 @@
 
 .no-touch #cd-vertical-nav {
   position: fixed;
-  right: 154px;
-  top: 50%;
+  right: 16%;
+  top: 35%;
   bottom: auto;
   transform: translateY(-50%);
   z-index: 6;
+  @media (max-width: 1440px) {
+    right: 4%;
+    // top: 50%;
+  }
+  @media (max-width: 950px) {
+    // right: 0%;
+    // top: 50%;
+  }
 }
 .no-touch #cd-vertical-nav li {
   text-align: right;
@@ -161,9 +176,16 @@
   transform-origin: 100% 50%;
 }
 
+
+
+
+
+
+
+
 /* Touch devices */
 .touch .cd-nav-trigger {
-  display: block;
+  // display: block;
   z-index: 2;
   position: fixed;
   bottom: 30px;
@@ -173,6 +195,7 @@
   border-radius: 0.25em;
   background: rgba(255, 255, 255, 0.9);
 }
+
 .touch .cd-nav-trigger span {
   position: absolute;
   height: 4px;

@@ -55,6 +55,9 @@ border-spacing: 0;
   margin: 0 auto;
   max-width: 1440px;
   width: 1440px;
+  @media (max-width: 1440px) {
+  width: 100%;
+  }
 }
 
 
@@ -307,6 +310,14 @@ body {
   display: none;
 }
 
+.fixed {
+  position: fixed !important;
+  width: 100% !important;
+  background-color: #282828 !important;
+  z-index: 10 !important;
+  box-shadow: -12px 4px 64px rgba(23, 23, 23, 0.24);
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -379,3 +390,4 @@ body {
   opacity: 0;
   transition: opacity .5s;
 }
+
