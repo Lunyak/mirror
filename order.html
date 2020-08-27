@@ -32,10 +32,15 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="#" class="logo__wrap">
+				<div class="header-burder">
+					<img class="header-burder-open" src="img/burger.svg" alt="burger">
+					<img class="header-burder-close" src="img/close.svg" alt="close">
+				</div>
+        <a href="#" class="logo__wrap">
 					<img src="img/logo.svg" alt="logo">
-					<h2>студия зеркал</h2>
-				</a>
+					<img class="burger-logo" src="img/logo-gray.svg" alt="logo">
+          <h2>студия зеркал</h2>
+        </a>
 				<nav class="nav">
 					<ul class="nav__linklist">
 						<li><a href="#" class="nav__links">конструктор</a></li>
@@ -63,14 +68,14 @@
 
 	<section class="order">
 		<div class="container">
-			<div class="works__inner">
-				<div class="works__content">
-					<div class="works__content-title">
+			<div class="order__inner">
+				<div class="order__content">
+					<div class="order__content-title">
 						<p>Остался последний шаг</p>
 						<h2>Оформление заказа</h2>
 					</div>
 					<div class="order-contant flex">
-						<div class="works__content-wrap">
+						<div class="order__content-wrap">
 
 							<!-- FORM -->
 							<form class="order-form">
@@ -102,7 +107,7 @@
 									<div class="order-form-item-text">
 										<p class="text-gray">Время доставки</p>
 									</div>
-	
+
 									<!-- С 00:00 ПО 00:00 -->
 									<div class="order-form-delivery-input">
 										<!-- С 00:00 -->
@@ -192,7 +197,7 @@
 												<button type="button" class="order-item-more">Подробнее</и>
 											</div>
 											<div class="order-item-count">
-												<p>1</p>
+												<button class="btn-math">-</button><p>1</p><button class="btn-math">+</button>
 											</div>
 											<div class="order-item-cost">
 												<h2 class="order-item-price">1200<span>.00 ₽</span></h2>
@@ -224,95 +229,7 @@
 										</div>
 									</div>
 									<!-- ITEM -->
-									<div class="order-product-mirror-item flex">
-										<div class="order-product-mirror-item-wrap flex">
-											<div class="order-product-item-img-wrap ">
-												<img src="img/catalog/mirror-square.jpg" alt="mirror">
-												<p class="order__img-sale sale-on">супер скидка до 2 окт.</p>
-											</div>
-	
-											<div class="order-item-discription flex">
-												<p class="order-artical">АРТ.467677</p>
-												<p class="order-item-name">Зеркало с подсветкой длинное название</p>
-												<button type="button" class="order-item-more">Подробнее</и>
-											</div>
-											<div class="order-item-count">
-												<p>1</p>
-											</div>
-											<div class="order-item-cost">
-												<h2 class="order-item-price">1200<span>.00 ₽</span></h2>
-											</div>
-											<div class="order-item-close">
-												<img src="img/work/order-chest.svg" alt="close">
-											</div>
-										</div>
-										<div class="order-product-drop-discription">
-											<div class="works__slider-table">
-												<div class="works__slider-table-link"><p>Форма:</p><span>круглая</span></div>
-												<div class="works__slider-table-link"><p>Размер:</p><span>100 х 100</span></div>
-												<div class="works__slider-table-link"><p>Рама:</p><span>алюминий, цвет жёлтый</span></div>
-												<div class="works__slider-table-link"><p>Подсветка:</p><span>Интерьерная, с отступом, цвет нейтральный</span></div>
-												<div class="works__slider-table-link"><p>Узор:</p><span>по спец. заказу</span></div>
-												<div class="works__slider-table-link"><p>Опции:</p><span>ИК нагреватель, Электронные часы, Цветовая подсветка RGB, Выключатель, сенсор прикосновения форма ромб</span></div>
-											</div>
-											<div class="order-product-drop-button">
-												<div class="mounting__checkbox">
-													<input checked="" id="order-mounting" type="checkbox">
-													<label for="order-mounting">
-														<span></span>
-														Требуется монтаж
-													</label>
-												</div>
-												<button class="close-drop-discription">Свернуть</button>
-										</div>
-										
-										</div>
-									</div>
-									<!-- ITEM -->
-									<div class="order-product-mirror-item flex">
-										<div class="order-product-mirror-item-wrap flex">
-											<div class="order-product-item-img-wrap ">
-												<img src="img/catalog/mirror-square.jpg" alt="mirror">
-												<p class="order__img-sale sale-on">супер скидка до 2 окт.</p>
-											</div>
-	
-											<div class="order-item-discription flex">
-												<p class="order-artical">АРТ.467677</p>
-												<p class="order-item-name">Зеркало с подсветкой длинное название</p>
-												<button type="button" class="order-item-more">Подробнее</и>
-											</div>
-											<div class="order-item-count">
-												<p>1</p>
-											</div>
-											<div class="order-item-cost">
-												<h2 class="order-item-price">1200<span>.00 ₽</span></h2>
-											</div>
-											<div class="order-item-close">
-												<img src="img/work/order-chest.svg" alt="close">
-											</div>
-										</div>
-										<div class="order-product-drop-discription">
-											<div class="works__slider-table">
-												<div class="works__slider-table-link"><p>Форма:</p><span>круглая</span></div>
-												<div class="works__slider-table-link"><p>Размер:</p><span>100 х 100</span></div>
-												<div class="works__slider-table-link"><p>Рама:</p><span>алюминий, цвет жёлтый</span></div>
-												<div class="works__slider-table-link"><p>Подсветка:</p><span>Интерьерная, с отступом, цвет нейтральный</span></div>
-												<div class="works__slider-table-link"><p>Узор:</p><span>по спец. заказу</span></div>
-												<div class="works__slider-table-link"><p>Опции:</p><span>ИК нагреватель, Электронные часы, Цветовая подсветка RGB, Выключатель, сенсор прикосновения форма ромб</span></div>
-											</div>
-											<div class="order-product-drop-button">
-												<div class="mounting__checkbox">
-													<input checked="" id="order-mounting" type="checkbox">
-													<label for="order-mounting">
-														<span></span>
-														Требуется монтаж
-													</label>
-												</div>
-												<button class="close-drop-discription">Свернуть</button>
-										</div>
 
-										</div>
-									</div>
 
 								</div>
 
@@ -364,7 +281,7 @@
 										<span>Свяжитесь с нами по телефону 8 (812) 876 67 77</span></p>
 								</div>
 
-								<div class="order-aside-info-item">
+								<div id="order-aside-info-item" class="order-aside-info-item">
 									<div class="order-aside-info-item-wrap color-purpur">
 										<img class="order-icon-item" src="img/order/pay.svg" alt="pey">
 									</div>
@@ -387,7 +304,7 @@
 										<p>2 500<span>.00 ₽</span></p>
 									</div>
 									<div class="catalog-item__order-button">
-										<button type="button" class="btn-simple btn-form-reload">Заказать звонок</button>
+										<button type="button" class="btn-opacity">Заказать звонок</button>
 										<button id="catalog-btn-basket" type="button" class="btn-single">Оплатить</button>
 									</div>
 

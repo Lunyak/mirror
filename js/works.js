@@ -11,16 +11,18 @@ $(document).ready(function () {
 // слайдер для фотографий зеркал
 $(document).ready(function () {
   $(".works__slider-img").slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     focusOnSelect: false,
     dots: false,
     arrows: true,
-    infinite: false,
+    // infinite: false,
     draggable: false,
+    variableWidth: true,
+    speed: 700,
+    // centerPadding: '5px 5px',
+    initialSlide: 0,
   });
 });
-
-
 
 $(".btn-slider-next").on("click", function () {
   $(".works__slider > .slick-next.slick-arrow").click();

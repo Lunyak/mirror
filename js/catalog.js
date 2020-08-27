@@ -7,6 +7,13 @@ $(".nav ul li a").click(function(e) {
   $(this).addClass('nav__links-active');
 })
 
+// добавляем и убираем активные состояние у меню навигации
+$(".pagination ul li").click(function (e) {
+  e.preventDefault();
+  $(".pagination ul li").removeClass("pagination-current");
+  $(this).addClass("pagination-current");
+});
+
 
 $('#catalog__sidebar-lenght-start').focus(function(){
 	$('.catalog__sidebar-lenght-start label').addClass('active-input');

@@ -17,8 +17,13 @@
 	<header class="header">
     <div class="container">
       <div class="header__inner">
+				<div class="header-burder">
+					<img class="header-burder-open" src="img/burger.svg" alt="burger">
+					<img class="header-burder-close" src="img/close.svg" alt="close">
+				</div>
         <a href="#" class="logo__wrap">
-          <img src="img/logo.svg" alt="logo">
+					<img src="img/logo.svg" alt="logo">
+					<img class="burger-logo" src="img/logo-gray.svg" alt="logo">
           <h2>студия зеркал</h2>
         </a>
         <nav class="nav">
@@ -140,12 +145,12 @@
 							<div class="catalog__sidebar-price-item-wrap">
 								<!-- ШИРИНА -->
 								<div class="catalog__sidebar-price-start">
-									<input class="btn-simple catalog-btn-aside" id="catalog-item-width" type="number" placeholder="Ширина">
+									<input class="input-form" id="catalog-item-width" type="number" placeholder="Ширина">
 									<label for="catalog-item-width">Ширина</label>
 								</div>
 								<!-- ВЫСОТА -->
 								<div class="catalog__sidebar-price-end">
-									<input class="btn-simple catalog-btn-aside test" id="catalog-item-hight" type="number" placeholder="Высота">
+									<input class="input-form" id="catalog-item-hight" type="number" placeholder="Высота">
 									<label for="catalog-item-hight">Высота</label>
 								</div>
 
@@ -172,7 +177,7 @@
 									<div class="sidebar-mirror-img-wrap">
 										<input class="custom-checkbox-mirror" name="mirror-item" type="radio" id="mirror-size400x400">
 										<label for="mirror-size400x400">
-											<p>100 x 200</p>
+											<p>400 x 300</p>
 										</label>
 									</div>
 								</div>
@@ -214,7 +219,7 @@
 						<div class="catalog-item__mounting">
 							<div class="catalog-item__mounting-title">
 								<h2>Стоимость монтажа +15% от стоимости зеркала,
-									но не менее 1 500.00 ₽</h2>
+									но не менее <p>1 500.00 ₽</p></h2>
 							</div>
 							<div class="catalog-item__mounting-discription">
 								<img src="img/catalog-item/intro.svg" alt="intro">
@@ -246,7 +251,7 @@
 							</div>
 							<div class="button-form">
 								<button type="button" class="btn-opacity">Заказать звонок</button>
-								<button id="catalog-btn-basket" type="button" class="btn-simple btn-form-search">В корзину</button>
+								<button id="catalog-btn-basket" type="button" class="btn-single">В корзину</button>
 							</div>
 						</div>
 
@@ -267,10 +272,10 @@
 										</div>
 										<div class="catalog-item-popup-content-index">
 											<p class="catalog__artical">АРТ.467677</p>
-											<p class="catalog__card-name">Название зеркала Lorem, Voluptatem neque optio quae?</p>
+											<p class="catalog__card-name">Название зеркала Lorem Voluptatem neque</p>
 										</div>
 										<div class="catalog__card-count">
-											<p>1</p>
+											<button class="btn-math">-</button><p>1</p><button class="btn-math">+</button>
 										</div>
 										<div class="catalog__card-discription">
 											<h2 class="catalog__card-price">1200<span>.00 ₽</span></h2>
@@ -286,20 +291,36 @@
 										</div>
 										<div class="catalog-item-popup-content-index">
 											<p class="catalog__artical">АРТ.467677</p>
-											<p class="catalog__card-name">Название зеркала Lorem, Voluptatem neque optio quae?</p>
+											<p class="catalog__card-name">Название зеркала Lorem Voluptatem neque</p>
 										</div>
 										<div class="catalog__card-count">
-											<p>1</p>
+											<button class="btn-math">-</button><p>1</p><button class="btn-math">+</button>
 										</div>
 										<div class="catalog__card-discription">
 											<h2 class="catalog__card-price">1200<span>.00 ₽</span></h2>
 										</div>
 									</div>
 								</div>
-							
+								<div class="catalog-item-popup-content-wrap">
+									<div class="catalog-item-popup-content-item">
 
+										<div class="catalog__card-img-wrap">
+											<img src="img/catalog/mirror-square.jpg" alt="mirror">
+											<p class="catalog__img-sale sale-on">супер скидка до 2 окт.</p>
+										</div>
+										<div class="catalog-item-popup-content-index">
+											<p class="catalog__artical">АРТ.467677</p>
+											<p class="catalog__card-name">Название зеркала Lorem Voluptatem neque</p>
+										</div>
+										<div class="catalog__card-count">
+											<button class="btn-math">-</button><p>1</p><button class="btn-math">+</button>
+										</div>
+										<div class="catalog__card-discription">
+											<h2 class="catalog__card-price">1200<span>.00 ₽</span></h2>
+										</div>
+									</div>
+								</div>
 
-										
 
 
 							</div>

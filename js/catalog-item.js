@@ -10,4 +10,7 @@ $('.catalog-item-popup-title img').on('click', function(){
 $('#catalog-btn-basket').on('click', function(){
   $('.catalog-item-popup').fadeIn();
 });
+$('.catalog-item-popup-button .btn-opacity').on('click', function(){
+  $('.catalog-item-popup').fadeOut();
+});
 

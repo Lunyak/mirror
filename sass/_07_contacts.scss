@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .page .header {
@@ -28,7 +29,20 @@
   right: 0;
   background: url(../img/map.svg) no-repeat;
   z-index: -3;
-  // opacity: 0;
+  @media (max-width: 1024px) {
+    right: -200px;
+    top: -100px;
+    transform: scale(1.3);
+  }
+  @media (max-width: 580px) {
+    top: 274px;
+    height: 553px;
+    transform: scale(1.4);
+  }
+  @media (max-width: 450px) {
+    right: -314px;
+    top: 235px;
+  }
 }
 .contacts::before {
   content: '';
@@ -39,45 +53,85 @@
   right: 0;
   background: url(../img/contacts-shadow.svg) no-repeat;
   z-index: -2;
-  // opacity: 0;
+  @media (max-width: 1024px) {
+    right: -200px;
+    top: 25px;
+    top: -100px;
+    transform: scale(1.1);
+  }
+  @media (max-width: 580px) {
+    top: 200px;
+  }
+  @media (max-width: 450px) {
+    top: 162px;
+  }
 }
 
 .contacts__inner {
   min-height: 650px;
   padding: 56px 100px;
   padding-bottom: 0;
+  overflow: hidden;
+  @media (max-width: 1024px) {
+    padding: 26px 20px;
+  }
+  @media (max-width: 450px) {
+    padding: 16px 16px;
+  }
 }
 
 .contacts__content-title {
   margin-bottom: 82px;
+  @media (max-width: 450px) {
+    margin-bottom: 48px;
+  }
   h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 2px;
-
     color: #FFFFFF;
+    @media (max-width: 450px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
   }
   p {
-    // font-family: Noto Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0.2px;
-
+    // letter-spacing: 0.2px;
     color: #828282;
+  }
+}
+
+.contacts__content {
+  @media (max-width: 450px) {
+    width: 100%;
   }
 }
 
 .contacts__content-contacts {
   display: flex;
   margin-bottom: 136px;
+  @media (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
+  @media (max-width: 580px) {
+    height: 100vh;
+  }
 }
 
 .contacts__item {
   margin-right: 48px;
+  @media (max-width: 850px) {
+    margin-bottom: 32px;
+  }
   P {
     max-width: 268px;
   font-size: 14px;
@@ -104,7 +158,6 @@
     line-height: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
-
     color: #FFFFFF;
   }
 }
@@ -142,27 +195,34 @@
 
 
 
-::selection{
-  color: #fff;
-  background: #d43f8d;
-}
 
 
-.form-wrap {
+
+.contacts .form-wrap {
   padding: 0px 24px 0px 24px;
   width: 650px;
-  // background: #282828;
   text-align: center;
   border-radius: 5px;
   display: flex;
   flex-direction: column-reverse;
   color: #000;
+  @media (max-width: 650px) {
+    width: 288px;
+    margin: 0 auto;
+  }
+  @media (max-width: 450px) {
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 
 .form-wrap .form-outer {
   width: 100%;
   overflow: hidden;
+  @media (max-width: 650px) {
+    width: 288px;
+  }
 }
 
 .form-wrap .form-outer form{
@@ -176,30 +236,30 @@
   position: relative;
 }
 
-.form-outer form .slide .title{
+.form-outer form .slide .title {
   text-align: left;
   font-size: 25px;
   font-weight: 500;
 }
 
-.form-outer form .slide .field{
+.form-outer form .slide .field {
   width: 100%;
   height: 45px;
-  // padding-top: 15px;
   display: flex;
   position: relative;
+  @media (max-width: 650px) {
+    width: 232px;
+  }
 }
 
 form .slide .field .label {
   position: absolute;
   top: -30px;
   font-weight: 500;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1px;
-
   color: #828282;
 }
 
@@ -225,7 +285,7 @@ form .slide .field select {
   font-weight: 500;
 }
 
-form .slide .btn-contacts{
+form .slide .btn-contacts {
   top: 50%;
   right: 40px;
   position: absolute !important;
@@ -242,28 +302,13 @@ form .slide .btn-contacts{
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.5s ease;
-  transform: translateX(0%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  @media (max-width: 650px) {
+    right: -20px;
+    top: 64%;
+  }
 }
 
-// .next-1, .next-2 {
-//   top: 50%;
-//   right: 40px;
-//   position: absolute !important;
-//   width: 40px !important;
-//   height: 40px !important;
-//   border: 1px solid #BB6BD9;
-//   border-radius: 50px;
-//   background: #d33f8e00;
-//   outline: none;
-//   color: #fff;
-//   cursor: pointer;
-//   font-size: 18px;
-//   font-weight: 500;
-//   letter-spacing: 1px;
-//   text-transform: uppercase;
-//   transition: 0.5s ease;
-//   transform: translateX(0%) translateY(-50%);
-// }
 
 
 
@@ -277,6 +322,7 @@ content: '';
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
 .btn-contacts::before {
 content: 'Далее';
   position: absolute;
@@ -287,6 +333,9 @@ content: 'Далее';
   left: -150%;
   transform: translateX(-30%) translateY(-50%);
   text-transform: none;
+  @media (max-width: 650px) {
+    display: none;
+  }
 }
 
 
@@ -346,7 +395,7 @@ form .slide .btns .nextBtn.next{
   background: #BB6BD9;
 }
 
-.progress-bar .step .bullet span{
+.progress-bar .step .bullet span {
   width: 154px;
   position: absolute;
   top: 15px;
@@ -388,6 +437,9 @@ form .slide .btns .nextBtn.next{
 .progress-bar .step:last-child .bullet:before,
 .progress-bar .step:last-child .bullet:after{
   width: calc(512px - 132px);
+  @media (max-width: 580px) {
+    width: 150px;
+  }
 }
 .progress-bar .step p.active{
   color: #BB6BD9;
@@ -418,12 +470,25 @@ form .slide .btns .nextBtn.next{
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   display: flex;
   align-items: center;
-  letter-spacing: 0.2px;
+  // letter-spacing: 0.2px;
   position: relative;
   color: #FFFFFF;
+  p {
+    width: 270px;
+    text-align-last: left;
+  }
+  @media (max-width: 650px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align-last: left;
+  }
+  @media (max-width: 450px) {
+    width: 270px;
+    text-align-last: left;
+  }
 }
 
 .contact__form-title::after {
@@ -434,7 +499,14 @@ form .slide .btns .nextBtn.next{
   width: 5px;
   height: 24px;
   border-left: 1px solid #bb6bd9;
-
+  @media (max-width: 650px) {
+    height: 40px;
+  }
+  @media (max-width: 450px) {
+    height: 40px;
+    left: -15px;
+    letter-spacing: 0px;
+  }
 }
 
 

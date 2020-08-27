@@ -95,9 +95,7 @@ console.log(widthNav);
 $(".header__phone").css({
   top: widthNav,
 });
-// $(".header__buy-icon").css({
-//   top: widthNav,
-// });
+
 
 
 // BURGER
@@ -156,38 +154,3 @@ $(".header-burder-close").on("click", function () {
 	});
 });
 
-// let burger = true;
-
-// function navBig() {
-//       if (burger) {
-//         $(".burger-off").toggleClass("burder-transform");
-//         $(".burger-off").css({
-//           "opacity": "0",
-//           "visibility": "hidden"
-//         });
-//         $(".burger-on").toggleClass("burder-transform");
-//         $(".burger-on").css({
-//           "opacity": "1",
-//           "visibility": "visible"
-//         });
-//         $(".nav").slideDown();
-//         $(".link-list-drop-company, .link-list-drop-services, .link-list-drop-technology").fadeIn();
-
-//         burger = false;
-//     } else {
-
-//       $(".burger-off").toggleClass("burder-transform");
-//       $(".burger-off").css({
-//         "opacity": "1",
-//         "visibility": "visible"
-//       });
-//       $(".burger-on").toggleClass("burder-transform");
-//       $(".burger-on").css({
-//         "opacity": "0",
-//         "visibility": "hidden"
-//       });
-//       $(".nav").slideUp(200);
-//       $(".link-list-drop-company, .link-list-drop-services, .link-list-drop-technology").fadeOut(200);
-//       burger = true;
-//   };
-// };

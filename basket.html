@@ -32,10 +32,15 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="#" class="logo__wrap">
+				<div class="header-burder">
+					<img class="header-burder-open" src="img/burger.svg" alt="burger">
+					<img class="header-burder-close" src="img/close.svg" alt="close">
+				</div>
+        <a href="#" class="logo__wrap">
 					<img src="img/logo.svg" alt="logo">
-					<h2>студия зеркал</h2>
-				</a>
+					<img class="burger-logo" src="img/logo-gray.svg" alt="logo">
+          <h2>студия зеркал</h2>
+        </a>
 				<nav class="nav">
 					<ul class="nav__linklist">
 						<li><a href="#" class="nav__links">конструктор</a></li>
@@ -49,7 +54,7 @@
 						<a href="+7 (000) 000 00 00">+7 (000)<span> 000 00 00</span></a>
 					</div>
 					<div class="header__buy-icon">
-						<div class="header-circle-buy-count"><span>2</span></div>
+							<div class="header-circle-buy-count"><span>2</span></div>
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<use xlink:href="img/sprite.svg#busket"></use> <!-- img gurger -->
 						</svg>
@@ -79,7 +84,7 @@
 								<div class="catalog-item__mounting">
 									<div class="catalog-item__mounting-title">
 										<h2>Стоимость монтажа +15% от стоимости зеркала,
-											но не менее 1 500.00 ₽</h2>
+											но не менее <span>1 500.00 ₽</span></h2>
 									</div>
 									<div class="catalog-item__mounting-discription">
 										<img src="img/catalog-item/intro.svg" alt="intro">
