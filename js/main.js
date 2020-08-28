@@ -1,6 +1,5 @@
 // добавляем и убираем активные состояние у меню навигации
 $(".nav ul li a").click(function (e) {
-  e.preventDefault();
   $(".nav ul li a").removeClass("nav__links-active");
   $(this).addClass("nav__links-active");
 });
@@ -132,6 +131,9 @@ $(".header-burder-open").on("click", function () {
 	$('.header').css({
 		"background": "#282828",
 	});
+	$('.header-burder').css({
+		marginRight: 30,
+	});
 });
 
 
@@ -154,6 +156,9 @@ $(".header-burder-close").on("click", function () {
 	});
 		$('.header').css({
 		"background": "#28282800",
+  });
+  $('.header-burder').css({
+		marginRight: 0,
 	});
 });
 

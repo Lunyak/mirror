@@ -199,9 +199,6 @@
         top: 34px;
         transform: scale(1);
     }
-    @media (max-width: 320px) {
-        top: 24px;
-    }
 }
 
 .header-buy-count {
@@ -229,7 +226,7 @@
     border-radius: 50%;
     span {
         position: absolute;
-        bottom: 1%;
+        bottom: 8%;
         left: 50%;
         transform: translate(-49%, -47%);
         font-weight: bold;
