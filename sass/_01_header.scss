@@ -8,11 +8,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    @media (max-width: 320px) {
-        // height: 100%;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
 }
 
 
@@ -41,6 +36,8 @@
     @media (max-width: 370px) {
         transform: scale(.8);
         margin-right: 30px;
+        margin-right: auto;
+        margin-left: 0;
     }
     img {
         @media (max-width: 370px) {
@@ -290,6 +287,7 @@
         transform: scale(.9);
     }
 }
+
 
 
 
