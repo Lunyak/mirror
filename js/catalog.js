@@ -44,17 +44,16 @@ $('#catalog__sidebar-width-end').focus(function(){
 	$('#catalog__sidebar-width-end').attr("placeholder", "");
 });
 
-
+$(document).mouseup(function (e){ // событие клика по веб-документу
+	var div = $("#catalog-sidebar"); // тут указываем ID элемента
+	if (!div.is(e.target) // если клик был не по нашему блоку
+			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+		div.removeClass("translate"); // скрываем его
+	}
+});
 
 $('#catalog-filter').on('click', function(){
 	$('.catalog__sidebar').addClass("translate");
-	$(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $("#catalog-sidebar"); // тут указываем ID элемента
-		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-			div.removeClass("translate"); // скрываем его
-		}
-	});
 });
 
 $('.catalog__sidebar-close').on('click', function(){
