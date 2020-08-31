@@ -1652,34 +1652,6 @@ body {
   }
 }
 
-.about:after {
-  position: absolute;
-  content: '';
-  width: 202px;
-  height: 147px;
-  bottom: 0;
-  left: 0%;
-  background: url(../img/01.svg) no-repeat;
-}
-
-@media (max-width: 450px) {
-  .about:after {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-    bottom: -30px;
-    left: -10%;
-  }
-}
-
-@media (max-width: 320px) {
-  .about:after {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-    bottom: -30px;
-    left: -13%;
-  }
-}
-
 .about__inner {
   padding: 120px 100px 100px 100px;
 }
@@ -1968,6 +1940,20 @@ body {
   color: #828282;
 }
 
+.about .container {
+  position: relative;
+}
+
+.about .container:before {
+  position: absolute;
+  content: '';
+  width: 202px;
+  height: 147px;
+  bottom: 0;
+  left: 0%;
+  background: url(../img/01.svg) no-repeat;
+}
+
 .best {
   position: relative;
   min-height: 820px;
@@ -1976,7 +1962,11 @@ body {
   z-index: 0;
 }
 
-.best::before {
+.best .container {
+  position: relative;
+}
+
+.best .container::before {
   position: absolute;
   content: '';
   width: 202px;
@@ -1987,7 +1977,7 @@ body {
 }
 
 @media (max-width: 450px) {
-  .best::before {
+  .best .container::before {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
     bottom: -30px;
@@ -1996,7 +1986,7 @@ body {
 }
 
 @media (max-width: 320px) {
-  .best::before {
+  .best .container::before {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
     bottom: -30px;
@@ -8577,7 +8567,15 @@ a.control_next {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
+  position: relative;
+}
+
+.order-item-count button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-46%, -48%);
+          transform: translate(-46%, -48%);
 }
 
 .order-item-count p {
@@ -8593,6 +8591,11 @@ a.control_next {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.order-item-count button:first-child span {
+  -webkit-transform: translate(-57%, -55%);
+          transform: translate(-57%, -55%);
 }
 
 .order-item-price {
