@@ -62,44 +62,6 @@
   }
 }
 
-.catalog__form-item-wrap {
-  display: flex;
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
-}
-
-.catalog__number-item {
-  margin-right: 24px;
-  @media (max-width: 800px) {
-    width: 282px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  @media (max-width: 550px) {
-    width: 215px;
-    margin: 0 0;
-    margin-right: auto;
-  }
-  label {
-    margin-right: 34px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-    z-index: 20;
-    @media (max-width: 550px) {
-      margin-right: 14px;
-      font-size: 12px;
-      line-height: 18px;
-      align-items: center;
-      display: flex;
-    }
-  }
-}
 
 .catalog .catalog__number-item input {
   width: 134px;
@@ -213,7 +175,7 @@
   position: relative;
   outline: none;
   @media (max-width: 800px) {
-    top: -71px;
+    top: -108px;
     right: 197px;
   }
   @media (max-width: 550px) {
@@ -418,7 +380,7 @@
   padding: 0;
   @media (max-width: 800px) {
     margin-bottom: 24px;
-    width: 225px;
+    width: 247px;
   }
   P {
     align-items: center;
@@ -507,6 +469,7 @@
   }
   @media (max-width: 800px) {
     margin-top: 0;
+    width: 100%;
   }
 }
 
@@ -634,3 +597,43 @@
   opacity: 1;
 }
 
+
+.catalog__form-item-wrap {
+  display: flex;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    width: 288px;
+  }
+}
+
+.catalog__number-item {
+  margin-right: 24px;
+  @media (max-width: 800px) {
+    width: 282px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  @media (max-width: 550px) {
+    width: 215px;
+    margin: 0 0;
+    margin-right: auto;
+  }
+  label {
+    margin-right: 34px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    z-index: 20;
+    @media (max-width: 550px) {
+      margin-right: 14px;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
