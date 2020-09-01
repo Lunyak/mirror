@@ -15,7 +15,7 @@ $('.close-drop-discription').on('click', function(){
 
 
 // кнопки формы Имя
-$('#order-input-name').focus(function(){
+$('#order-input-na(function(){
 	$('.order-name label').addClass('active');
 	$('#order-input-name').attr("placeholder", "");
 });
@@ -62,7 +62,6 @@ $('#catalog-btn-basket').on('click', function(){
 });
 
 
-
 $('.close-popup').on('click', function(){
   $(".order-popup-formalized").css("display", "flex").show().fadeOut();
 });
@@ -99,9 +98,9 @@ $(".header-burder-open").on("click", function () {
 		top: widthNav,
 	});
 	$(".header__phone").fadeIn();
-	$('.logo__wrap').css({
-		"margin-right": "0",
-	});
+	// $('.logo__wrap').css({
+	// 	"margin-right": "0",
+	// });
 	$('.logo__wrap h2').css({
 		"color": "#3F3F3F",
 	});
@@ -125,9 +124,9 @@ $(".header-burder-close").on("click", function () {
 	$(".header__buy-icon").css({
 		top: 32,
 	});
-	$('.logo__wrap').css({
-		"margin-right": "30px",
-	});
+	// $('.logo__wrap').css({
+	// 	"margin-right": "30px",
+	// });
 	$('.logo__wrap h2').css({
 		"color": "#fff",
 	});
