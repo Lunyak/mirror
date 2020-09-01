@@ -11,6 +11,52 @@ $('.close-drop-discription').on('click', function(){
 
 
 
+
+
+
+// кнопки формы Имя
+$('#order-input-name').focus(function(){
+	$('.order-name label').addClass('active');
+	$('#order-input-name').attr("placeholder", "");
+});
+// кнопки формы mail
+$('#order-input-mail').focus(function(){
+	$('.order-mail label').addClass('active');
+	$('#order-input-mail').attr("placeholder", "");
+});
+// кнопки формы phone
+$('#order-input-phone').focus(function(){
+	$('.order-phone label').addClass('active');
+	$('#order-input-phone').attr("placeholder", "");
+});
+// кнопки формы city
+$('#order-input-city').focus(function(){
+	$('.order-city label').addClass('active');
+	$('#order-input-city').attr("placeholder", "");
+});
+// кнопки формы street
+$('#order-input-street').focus(function(){
+	$('.order-street label').addClass('active');
+	$('#order-input-street').attr("placeholder", "");
+});
+// кнопки формы house
+$('#order-input-house').focus(function(){
+	$('.order-house label').addClass('active');
+	$('#order-input-house').attr("placeholder", "");
+});
+// кнопки формы flat
+$('#order-input-flat').focus(function(){
+	$('.order-flat label').addClass('active');
+	$('#order-input-flat').attr("placeholder", "");
+});
+
+
+
+
+
+
+
+
 $('#catalog-btn-basket').on('click', function(){
   $(".order-popup-formalized").css("display", "flex").hide().fadeIn();
 });
